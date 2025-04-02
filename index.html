@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 800px;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .feature-item {
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .feature-item:hover {
+      transform: translateY(-10px);
+    }
+    
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #6e8efb;
+    }
+    
+    .download-section {
+      text-align: center;
+      background-color: white;
+      padding: 3rem 0;
+      border-radius: 10px;
+      margin: 2rem 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 1rem;
+    }
+    
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .system-req {
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin: 2rem 0;
+    }
+    
+    .system-req h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    .system-req ul {
+      list-style-type: none;
+      padding: 1rem;
+    }
+    
+    .system-req li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    
+    .system-req li::before {
+      content: "✓";
+      color: #6e8efb;
+      position: absolute;
+      left: 0;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background-color: #333;
+      color: white;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <title>Установить CyberMegabaqtik Pro</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Наша Программа</h1>
+      <p>Простое и эффективное решение для ваших задач</p>
+    </div>
+  </header>
+  
+  <section class="container hero">
+    <h1>Добро пожаловать!</h1>
+    <p>Наша программа разработана для того, чтобы сделать вашу жизнь проще. Она обладает интуитивно понятным интерфейсом и мощными функциями, которые помогут вам решить ваши задачи быстрее и эффективнее.</p>
+    <a href="#download" class="btn">Скачать сейчас</a>
+  </section>
+  
+  <section class="container">
+    <div class="features">
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <h3>Быстрая работа</h3>
+        <p>Наша программа оптимизирована для высокой производительности, что гарантирует быструю и плавную работу даже при выполнении сложных задач.</p>
+      </div>
+      
+      <div class="feature-item">
+        <div class="feature-icon">🔒</div>
+        <h3>Безопасность</h3>
+        <p>Ваши данные всегда в безопасности благодаря передовым технологиям шифрования и защиты информации.</p>
+      </div>
+      
+      <div class="feature-item">
+        <div class="feature-icon">🎯</div>
+        <h3>Простота использования</h3>
+        <p>Интуитивно понятный интерфейс делает нашу программу доступной для пользователей любого уровня подготовки.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container" id="download">
+    <div class="download-section">
+      <h2>Скачать программу</h2>
+      <p>Выберите версию, подходящую для вашей операционной системы:</p>
+      <a href="https://drive.usercontent.google.com/download?id=1_yxxRVLnDw1bA3dCYDXgEqrvPZoSMZc2&export=download&authuser=0/download" class="btn">Windows</a>
+      <a href="https://drive.usercontent.google.com/download?id=1_yxxRVLnDw1bA3dCYDXgEqrvPZoSMZc2&export=download&authuser=0/download" class="btn">Linux</a>
+    </div>
+  </section>
+  
+  <section class="container">
+    <div class="system-req">
+      <h2>Системные требования</h2>
+      <ul>
+        <li>Операционная система: Windows 10/11, или Linux</li>
+        <li>Процессор: Intel Core i3 или AMD Ryzen 3 и выше</li>
+        <li>Оперативная память: 3 ГБ и боkmit</li>
+        <li>Свободное место на диске: 1 ГБ</li>
+        <li>Подключение к интернету: для обновлений и некоторых функций</li>
+      </ul>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Утилита. Все права защищены.</p>
+      <p>Поддержка: a61174166@gmail.com</p>
+    </div>
+  </footer>
+</body>
+</html>
